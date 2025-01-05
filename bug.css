@@ -1,0 +1,3 @@
+The CSS property `calc()` is used to perform calculations. However, when using `calc()` with percentages, unexpected results can occur due to the order of operations. For example, `width: calc(50% - 10px);` might not always produce the expected result, as the browser might calculate `50%` before subtracting `10px`, instead of the intended calculation of 50% of the container width minus 10 pixels.
+
+Another common issue is forgetting to include units. For example, `width: calc(50% - 10);` is incorrect as `10` lacks a unit. The correct usage should be `width: calc(50% - 10px);` or similar.
